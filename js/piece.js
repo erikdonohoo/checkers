@@ -9,7 +9,7 @@ window.Piece = (function () {
 	}
 
 	Piece.prototype.isKing = function () {
-		return true;
+		return this.hasCrossedBoard;
 	};
 
 	// Return html element of rendered piece
