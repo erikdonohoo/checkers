@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Checkers</title>
+</head>
+<body>
+	<div class="board-container"></div>
+	<div class="info"></div>
+
+	<script src="js/piece.js"></script>
+	<script src="js/cell.js"></script>
+	<script src="js/board.js"></script>
+
+	<script>
+		var board = new Board();
+		document.querySelector('.board-container').appendChild(board.render());
+	</script>
+</body>
+</html>
