@@ -1,8 +1,12 @@
 # checkers
 A simple JS checkers game
 
-## Architecture
+### View for now
+Clone this repo, and then open the `index.html` in your browser.
 
-### Game Manager
-setup(config)  
-Setting up board  
+In your browser console, enter...
+
+`GameManager.setupGame()`  
+`GameManager.renderGame()`
+
+This will let you see the initial setup of the game.
