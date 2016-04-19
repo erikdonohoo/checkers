@@ -23,10 +23,25 @@ window.Cell = (function () {
 		this.piece = piece;
 	};
 
+	Cell.prototype.select = function () {
+		this.selected = true;
+	};
+
+	Cell.prototype.deselect = function () {
+		this.selected = false;
+	};
+
 	Cell.prototype.render = function () {
 		var cell = document.createElement('div');
 		cell.classList.add('cell');
 		cell.classList.add(this.color);
+		cell.setAttribute('coord-x', this.x);
+		cell.setAttribute('coord-y', this.y);
+
+		// Selected?
+		if (this.selected) {
+			cell.classList.add('selected');
+		}
 
 		// Append piece
 		if (this.hasPiece()) {

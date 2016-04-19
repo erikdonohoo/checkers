@@ -40,5 +40,9 @@ window.Board = (function () {
 		return board;
 	};
 
+	Board.prototype.isValidCoordinate = function (x, y) {
+		return x >= 0 && x < this.size && y >= 0 && y < this.size;
+	};
+
 	return Board;
 })();

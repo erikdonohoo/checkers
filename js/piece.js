@@ -22,7 +22,7 @@ window.Piece = (function () {
 			piece.appendChild(document.createTextNode("♔")); // King HTML Char
 		}
 
-		return piece;
+		return this.isCaptured ? '' : piece;
 	};
 
 	return Piece;
